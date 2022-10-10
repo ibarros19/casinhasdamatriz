@@ -16,3 +16,4 @@ const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false })
 window.addEventListener('click', () => {
     bsCollapse.hide()
 })
+

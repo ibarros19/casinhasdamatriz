@@ -4,7 +4,15 @@
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-business-casual/blob/master/LICENSE)
 */
 // Highlights current date on contact page
-window.addEventListener('DOMContentLoaded', event => {
-    const listHoursArray = document.body.querySelectorAll('.list-hours li');
-    listHoursArray[new Date().getDay()].classList.add(('today'));
+// window.addEventListener('DOMContentLoaded', event => {
+//     const listHoursArray = document.body.querySelectorAll('.list-hours li');
+//     listHoursArray[new Date().getDay()].classList.add(('today'));
+// })
+
+
+const menuToggle = document.getElementById('navbarSupportedContent')
+const bsCollapse = new bootstrap.Collapse(menuToggle, { toggle: false })
+
+window.addEventListener('click', () => {
+    bsCollapse.hide()
 })

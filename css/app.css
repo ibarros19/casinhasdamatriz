@@ -14,3 +14,10 @@
 .max-wi {
     max-width: 100% !important;
 }
+.max-hights {
+    max-height: 650px !important;
+}
+.max-hights2 {
+    width: 487px;
+    height: 650px;
+}
